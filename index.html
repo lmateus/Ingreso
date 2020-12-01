@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+    <!--BOOTSTRAP CDN-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-light bg-light"> 
+        <a href="/" class="navbar-brand">
+            Tablero de gestión de la información
+        </a>
+    </nav>
+
+    
+
+    <div class="container">
+        
+        <div id="App" class="row pt-5">
+            
+            <!--
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Describa la muestra</h4>
+                    </div>
+                    <form id="product-form" class="card-body">
+                       
+                        <input type="submit" value="Add" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>-->
+    
+
+            
+
+        <div class="row" class="col-md-8">
+            <div class="card-body text-primary">
+                <table id="encabezadoRegistro" class="table table-condensed" style="line-height: 0.5">
+                    <div class="card-header">
+                        <h3 style="text-align:center">REGISTRO DE PERFORACIÓN</h3>
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Proyecto</th>
+                            <th colspan="5" contenteditable="true">Sopo</th>
+                        </tr>
+                    </thead>
+                    <div class="card-body">
+                        <tbody>
+                            <tr>
+                            <td>Ubicacion</td>
+                            <td contenteditable="true"></td>
+                            <td>Norte</td>
+                            <td contenteditable="true"></td>
+                            <td>Este</td>
+                            <td contenteditable="true"></td>
+                            </tr>
+                            <tr>
+                            <td>Fecha</td>
+                            <td contenteditable="true" colspan="2"></td>
+                            <td>Equipo</td>
+                            <td contenteditable="true" colspan="2"></td>
+                            </tr>
+                            <tr>
+                            <td>Operador</td>
+                            <td contenteditable="true" colspan="2"></td>
+                            <td>Sondeo</td>
+                            <td contenteditable="true" colspan="2"></td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+            </div>
+                    
+
+                
+                <table id="tablaRegistro" class="table table-condensed">
+                    
+                    
+                    <tr>
+                        <th>Profundidad</th>
+                        <th>Muestra</th>
+                        <th>Tipo</th>
+                        <th>Descripcion</th>
+                        <th>SPT</th>
+                        <th>RPI</th>
+                        <th>RQD</th>
+                        <th>Recobro</th>
+                        <th>Nivel freático</th>
+                    </tr>
+                    <tr>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td contenteditable="true"></td>
+                        <td> <a href="#" class= "btn btn-danger" name="delete">Borrar</a></td>
+                        <td> <a href="#" class= "btn btn-success" name="add">Agregar</a></td>
+                        
+                    </tr>
+                    
+                    
+                </table>
+                
+
+            <div id="sample-list" class="col-md-8"></div>
+
+        </div>
+
+
+    </div>
+
+    <script src="App.js"></script>
+    
+
+
+</body>
+</html>
